@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: "Create beautiful, customisable QR codes with advanced styling options, centre logos, and multiple data types. Perfect for marketing, business cards, and more.",
     images: [
       {
-        url: "/img/og_image.png",
+        url: "/og_image.png",
         width: 1200,
         height: 630,
         alt: "QR Code Generator",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "QR Code Generator - Create Customisable QR Codes",
     description: "Create beautiful, customisable QR codes with advanced styling options, centre logos, and multiple data types.",
-    images: ["/img/og_image.png"],
+    images: ["/og_image.png"],
     creator: "@lukeorriss",
   },
   robots: {

@@ -14,8 +14,61 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "QR",
-  description: "Create beautiful, customisable QR codes with advanced styling options",
+  title: {
+    default: "QR Code Generator",
+    template: "%s | QR Code Generator",
+  },
+  description: "Create beautiful, customisable QR codes with advanced styling options, centre logos, and multiple data types. Perfect for marketing, business cards, and more.",
+  keywords: ["QR code", "QR code generator", "custom QR code", "QR code with logo", "free QR code generator", "customisable QR code", "QR code maker", "business QR code", "marketing QR code"],
+  authors: [{ name: "Luke Orriss" }],
+  creator: "Luke Orriss",
+  publisher: "Luke Orriss",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://qr.ldo.dev"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: "https://qr.ldo.dev",
+    siteName: "QR Code Generator",
+    title: "QR Code Generator - Create Customisable QR Codes",
+    description: "Create beautiful, customisable QR codes with advanced styling options, centre logos, and multiple data types. Perfect for marketing, business cards, and more.",
+    images: [
+      {
+        url: "/img/og_image.png",
+        width: 1200,
+        height: 630,
+        alt: "QR Code Generator",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "QR Code Generator - Create Customisable QR Codes",
+    description: "Create beautiful, customisable QR codes with advanced styling options, centre logos, and multiple data types.",
+    images: ["/img/og_image.png"],
+    creator: "@lukeorriss",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "br9AjaAyJgS4OVigpXtHmm2DwdzuzMqzpK4G77lD2TY",
+  },
 };
 
 export default function RootLayout({
